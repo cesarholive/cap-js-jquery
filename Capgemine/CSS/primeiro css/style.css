@@ -1,0 +1,24 @@
+.box{
+    box-sizing: content-box;
+    height: 100px;
+    width: 100px;
+    border: 2px solid #000;
+    border-radius: 80px;
+}
+
+.azul{
+    background-color: #0000ff;
+    border-width: 0.1rem;
+    border-bottom-width: 0;
+    border-style: dashed;
+}
+
+.vermelho{
+    background-color: #d41232;
+    border-width: 10px 0 5px 3px;
+    border-style: double;
+}
+
+.verde{
+    background-color: #0fd149;
+}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Classe</title>
+
+    <!--JS-->
+    <script>
+
+        function exibirTexto(){
+            var campo = document.getElementsByClassName("texto")[2];
+
+            alert(campo.innerHTML);
+        }
+        
+    </script>
+</head>
+<body>
+    
+    <button onclick="exibirTexto()">Clique aqui</button>
+
+    <h1 class="texto"> Título em H1</h1>
+    <h2 class="texto"> Título em H2</h2>
+    <p class="texto"> Paragrafo</p>
+
+</body>
+</html>
