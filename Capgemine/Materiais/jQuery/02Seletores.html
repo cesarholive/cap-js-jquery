@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seletores</title> 
+        
+        <!--jQuery-->
+        <script src="jquery-3.3.1.min.js"></script>
+        
+        <!--Script-->
+        <script>
+            
+            //Ao carregar o documento
+            $(document).ready(function(){
+                
+                //Variáveis
+                var campo = $("input").val();
+                var titulo = $("#titulo").html();
+                var subtitulo = $(".subtitulo").html();
+                
+                //Exibir
+                alert(campo);
+                alert(titulo);
+                alert(subtitulo);
+                
+            });
+            
+        </script>
+        
+    </head>
+    
+    <body>      
+        
+        <input type="text" value="Campo Nome">
+        <h1 id="titulo">Título em H1</h1>
+        <h2 class="subtitulo">Título em H2</h2>
+        
+    </body>
+</html>

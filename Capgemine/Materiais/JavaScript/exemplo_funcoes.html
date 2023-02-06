@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Exemplo de funções</title>
+    
+        <!--JS-->
+        <script>
+        
+            function escrever(){
+                var campo = document.getElementById("campo").value;
+                
+                document.getElementById("maiusc").innerHTML = campo.toUpperCase();
+                document.getElementById("minusc").innerHTML = campo.toLowerCase();
+                
+                
+                document.getElementById("qtd").innerHTML = "Caracteres digitados: "+campo.length;
+                
+                
+            }
+            
+        </script>
+    </head>
+    
+    <body>
+    
+        <input type="text" onkeyup="escrever()" id="campo">
+        
+        <h1 id="maiusc"></h1>
+        <h1 id="minusc"></h1>
+        <hr>
+        <h1 id="qtd">Caracteres digitados: 0</h1>
+        
+    </body>
+</html>

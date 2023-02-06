@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seletor CLASSE</title>
+    
+        <!--JS-->
+        <script> 
+            
+            //Função
+            function exibirTexto(){
+                
+                //Armazenar a tag com a classe texto
+                var campo = document.getElementsByClassName("texto")[2];
+                
+                //Exibir o conteúdo
+                alert(campo.innerHTML);
+            }
+            
+        </script>
+    </head>
+    
+    <body> 
+        
+        <button onclick="exibirTexto()">Clique aqui</button>
+        
+        <h1 class="texto">Título em H1</h1>
+        <h2 class="texto">Título em H2</h2>
+        <p class="texto">Parágrafo</p>
+        
+    </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
