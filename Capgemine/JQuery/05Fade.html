@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade</title>
+
+    <!--JQuery-->
+    <script src = "jquery-3.6.3.min.js"></script>
+    <!---Script-->
+    <script>
+        //Ao carregar o documento
+        $(document).ready(function(){
+            //Ocultar h1
+            $("h1").css("display", "none");  
+            
+            //Exibir h1
+            $("#exibir").click(function(){
+                $("h1").fadeIn("slow");
+
+            //Ocultar h1
+            $("#ocultar").click(function(){
+                $("h1").fadeOut(3000);
+
+            })
+            })
+
+            /*
+            Tempo do Fade
+            Default = 0,4s
+            Slow =  0,6
+            Valor = 3000 = 3s
+            */
+
+        });
+    </script>
+</head>
+<body>
+    
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+
+    <hr>
+
+    <h1>Aprendendo JQuery</h1>
+</body>
+</html>

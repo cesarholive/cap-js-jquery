@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Exibir e Ocultar</title>
 
     <!--JQuery-->
     <script src = "jquery-3.6.3.min.js"></script>
@@ -13,11 +13,23 @@
         //Ao carregar o documento
         $(document).ready(function(){
             
+            //Exibir
+            $("#exibir").click(function(){
+                $("img").show();
+            });
+            //Ocultar
+            $("#ocultar").click(function(){
+                $("img").hide();
+            });
 
         });
     </script>
 </head>
 <body>
     
+    <button id="exibir">Exibir</button>
+    <button id="ocultar">Ocultar</button>
+    <br>
+    <img src="logo_proway.png" >
 </body>
 </html>
